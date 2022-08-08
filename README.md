@@ -41,7 +41,7 @@ Although there was little to modify because the data set was preprocessed, it ne
 
 ### 3. Model Summary
 
-![Alt text](images/tipmodel.jpg)
+![Alt text](images/tipmodel.jpeg)
 
 3.1 Using the R-GCN model, we predicted the target link (side effect) among the multi-relational links produced by two drug combinations. 
 
