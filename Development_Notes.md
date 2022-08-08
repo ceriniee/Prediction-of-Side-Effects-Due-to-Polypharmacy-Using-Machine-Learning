@@ -1,6 +1,10 @@
 # Development Notes: Dec. 2021 ~ June 2022
 
-Project Start Date: December 2021
+Project Start Date: November 2021
+
+## November 2021
+* I read the [paper](https://academic.oup.com/bioinformatics/article/34/13/i457/5045770?login=false) by Marinka Zitnik, Monica Agrawal and Jure Leskovec on Decagon polypharmacy and studied its [GitHub](https://github.com/mims-harvard/decagon). 
+
 
 ## December 2021 
 * I set up the development environment. 
