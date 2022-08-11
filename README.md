@@ -24,7 +24,7 @@ As explained above, in order to reduce the amount of computation and increase th
 * **Drug-Drug Graph Embedding Module (DDM)**: Update all drugs associated with the targeted (responsive) drugs. At this time, the R-GCN model was used because there may be several side effects rather than one depending on the drug-drug relationship. To prevent overfitting and reduce complexity, we applied the basis decomposition regulation presented in the paper ([Modeling Relational Data with Graph Convolutional Networks](https://academic.oup.com/bioinformatics/article/34/13/i457/5045770?login=false)).
 
 #### 1.2 Decoder
-The necessary parts for predicting side effects are the Edge and Edge labels contained in the D-D graph. Since it is a graph of the Triple (D-E-D) structure, the target side effects were calculated as probabilities by activating with a sigmoid function using DistMult factorization, which can preserve the relationship between the nodes well. 
+The necessary parts for predicting side effects are the Edge and Edge labels contained in the D-D graph. Since it is a graph of the Triple (D-E-D) structure, the target side effects were calculated as probabilities by activating with a sigmoid function using DistMult factorization, which can preserve the relationship between the nodes effectively.
 
 ### 2. Data Circulation and Modernization
 The dataset used for model learning was extracted from the [PubChem](https://pubchem.ncbi.nlm.nih.gov/) online drugbase. Therefore, when the user puts the drug name in the app as an input, the user is changing the drug name to the chem ID using the site above. We used Selenium to do the crawling. We utilized the ID combination to classify whether it was a trained combination or not. 
@@ -33,7 +33,7 @@ The dataset used for model learning was extracted from the [PubChem](https://pub
 
 ### 1. Data Collection
 
-There were multiple drug data sets that could be used for free, but the collection was narrowed down when taking two or more drugs since most drug data sets were structures that contained a detailed explanation of one drug. In order to predict side effects, we needed a dataset connected not only to drugs but also to proteins. In conclusion, we decided to use the data published in [Decagon](https://github.com/mims-harvard/decagon) ([Modeling polypharmacy side effects with graph convolutional networks](https://academic.oup.com/bioinformatics/article/34/13/i457/5045770?login=false)) as it was utilized by other algorithms multiple times and suited our situation. 
+There were multiple drug data sets that could be used for free, but the collection was narrowed down when taking two or more drugs into consideration, since most drug data sets were structures that contained a detailed explanation of one drug. In order to predict side effects, we needed a dataset connected not only to drugs but also to proteins. In conclusion, we decided to use the data published in [Decagon](https://github.com/mims-harvard/decagon) ([Modeling polypharmacy side effects with graph convolutional networks](https://academic.oup.com/bioinformatics/article/34/13/i457/5045770?login=false)) as it was utilized by other algorithms multiple times and suited our situation. 
 
 ### 2. Data Processing
 
